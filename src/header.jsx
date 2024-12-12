@@ -18,7 +18,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/" className="text-white">Home</Nav.Link>
               <Nav.Link as={Link} to="/pet-nearby" className="text-white">Pet Nearby</Nav.Link> {/* Add Pet Nearby link */}
               <Nav.Link as={Link} to="/about-us" className="text-white">About Us</Nav.Link>
-              <Nav.Link href="/contact-page" className="text-white">Contacts</Nav.Link>
+              <Nav.Link as={Link} to="/contact-page" className="text-white">Contacts</Nav.Link> {/* Updated to use 'to' */}
               <Nav.Link as={Link} to="/donate" className="text-white">Donate</Nav.Link>
             </Nav>
           </Navbar.Collapse>
