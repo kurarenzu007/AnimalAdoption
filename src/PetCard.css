@@ -1,0 +1,102 @@
+.pet-nearby-section {
+    border: 2px solid #a3a3a3; /* Adds a border around the section */
+    background-color:#f1f6fd;
+    padding: 20px; /* Adds padding inside the section */
+  
+    border-radius: 8px; /* Optional: rounds the corners of the border */
+    
+  }
+  
+  .pet-nearby-section .card {
+    height: 100%;
+    width: 100%;
+    max-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger and darker shadow for a more pronounced effect */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  /* Optional: Add a stronger hover effect for the card */
+  .pet-nearby-section .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Even larger and darker shadow on hover */
+  }
+  
+  
+  
+  .card-img-top {
+    height: 250px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%; /* Ensures the image takes the full width */
+    border-bottom: 2px solid #ddd;
+    display: block; /* Prevents image from stretching */
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .card-body .btn {
+    margin-top: auto;
+  }
+  
+  /* Add spacing between the cards */
+  .pet-nearby-section .col {
+    margin-top: 20px; /* Adjust the top margin for each card */
+  }
+ /* ImgModal Styles */
+.ImgModal .modal-content {
+  border-radius: 8px; /* Rounded corners for the image modal */
+  overflow: hidden;   /* Ensures the image doesn't overflow */
+}
+
+.ImgModal .modal-header {
+  background-color: #f8f9fa;  /* Light background for the header */
+  border-bottom: 2px solid #ddd; /* Border under the header */
+}
+
+.ImgModal .modal-body {
+  display: flex;
+  justify-content: center;  /* Centers the content horizontally */
+  align-items: center;      /* Centers the content vertically */
+  padding: 0;               /* Remove extra padding */
+}
+
+.ImgModal .modal-body img {
+  max-width: 100%;           /* Ensures the image scales with modal width */
+  max-height: 80vh;          /* Limits the image height */
+  object-fit: contain;       /* Keeps the aspect ratio of the image */
+  border-radius: 2px;        /* Optional: rounded corners for the image */
+}
+
+.ImgModal .modal-footer {
+  background-color: #f8f9fa;  /* Light background for the footer */
+  border-top: 2px solid #ddd; /* Border on top of the footer */
+}
+
+.ImgModal .modal-footer .btn-secondary {
+  border-radius: 4px; /* Rounded corners for the close button */
+}
+
+  
+  .modal-body img {
+    max-width: 100%;           /* Ensures the image scales with the modal width */
+    max-height: 80vh;          /* Prevents the image from being too large */
+    object-fit: contain;       /* Ensures the image maintains its aspect ratio */
+  }
+  .pet-nearby-section h1 {
+    text-align: center;        /* Centers the text horizontally */
+    margin-bottom: 30px;       /* Optional: Adds space below the heading */
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+  }
+  .pet-nearby-section hr {
+    height: 1.5px;          /* Sets the thickness of the horizontal line */
+    background-color: #5e5e5e;  /* Sets the color of the line */
+    border: none;         /* Removes the default border style */
+  }
+  
+  

@@ -1,0 +1,40 @@
+/* AdoptionForm.css */
+.adoption-form-container {
+  text-shadow: 2px 2px 5px rgba(49, 49, 49, 0.3); 
+    background-color: rgb(218, 233, 253);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    background-color: rgb(218, 233, 253);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  h3{
+
+    font-weight:bold;
+  }
+  form .form-control {
+    margin-bottom: 10px;
+  }
+  /* Add this to your CSS file */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-color: #dae9fd;
+  color: #000000;
+  background-color: #dae9fd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #6cb3ff;
+  color: #ffffff;
+}
+
+.back-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Bootstrap focus outline */
+}

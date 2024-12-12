@@ -1,0 +1,49 @@
+html, body {
+  height: 100%; /* Full height */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  
+}
+body {
+  background-image: url('./assets/background-image.jpg');
+  background-size: cover; /* Makes the image cover the entire area */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents repeating the background */
+  background-attachment: fixed; /* Fixes the background during scroll */
+  min-height: 100vh; /* Ensures the body is at least full height of the viewport */
+}
+header {
+  z-index: 1000; /* Keeps the header on top */
+  position: relative; /* Positioning context for the header */
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+  color: white;
+}
+.nav-link {
+color: white; /* Set font color to white */
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* White shadow for contrast */
+font-size: 1.2rem; 
+margin-right: 15px; /* Adjust this value to increase or decrease spacing */
+}
+footer {
+  color: white;
+  background-color: transparent;
+  margin-top:auto;
+}
+.logo {
+  height: 50px; 
+  margin-right: 10px; 
+  margin-left: -80px;
+  margin-top:10px;
+}
+.nav-item:last-child .nav-link {
+margin-right: 0; 
+}
+.midtext{
+height: 30vh; 
+display: flex; 
+flex-direction: column;
+justify-content: center; 
+align-items: center; 
+color:white;
+}

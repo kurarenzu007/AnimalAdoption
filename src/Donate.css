@@ -1,0 +1,92 @@
+/* Horizontal Line Styling */
+.hr-style {
+    border: 1;
+    border-top: 2px solid #000000;
+    margin: 30px 0;
+    width: 100%;
+}
+
+/* Section Titles Styling */
+.newHead {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color:#093813;
+}
+
+p1 {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+
+.donation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.donation-section img {
+    max-width: 300px;
+    height: auto; /* Ensure images scale properly */
+    margin-right: 30px;
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+}
+
+.donation-section .content {
+    max-width: 700px;
+    text-align: left;
+}
+/* Align the section header to the left */
+.section-header {
+display: flex;
+justify-content: flex-start; /* Align the content to the left */
+width: 100%;
+margin-left: 300px; /* Optional: Add some space from the left */
+}
+
+.section-header h1 {
+font-size: 1.8rem;
+font-weight: bold;
+color: #093813;
+}
+.container-main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black; /* Set text color to black for better contrast */
+    padding: 50px 15px;
+    background-color: white; /* Set the background color to white */
+    border-radius: 8px; /* Optional: Rounded corners for the main content box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Light shadow for better separation */
+}
+.header-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color:#093813;
+}
+.donation-description {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+.btn-donate {
+    font-size: 1rem;
+    padding: 8px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+.btn-donate:hover {
+    background-color: #115e21;
+    cursor: pointer;
+}
