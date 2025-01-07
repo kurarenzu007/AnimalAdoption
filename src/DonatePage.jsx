@@ -25,7 +25,7 @@ const DonatePage = () => {
         </p>
         <br />
         
-        <button className="btn-donate" >Donate Now</button>
+        <button className="btn-donate" onClick={handleDonateClick}>Donate Now</button>
       
         <br /><br />
         <hr className="hr-style" />
