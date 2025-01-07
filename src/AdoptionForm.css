@@ -19,7 +19,7 @@
   form .form-control {
     margin-bottom: 10px;
   }
-  /* Add this to your CSS file */
+ 
 .back-button {
   position: absolute;
   top: 20px;
@@ -36,5 +36,5 @@
 }
 
 .back-button:focus {
-  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); /* Bootstrap focus outline */
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); 
 }

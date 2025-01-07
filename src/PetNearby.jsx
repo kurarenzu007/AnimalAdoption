@@ -17,10 +17,10 @@ import MaineCoon from './assets/MaineCoon.jpg';
 const PetNearby = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedPet, setSelectedPet] = useState(null);
-  const [showImageModal, setShowImageModal] = useState(false); // To show image in full size
-  const [selectedImage, setSelectedImage] = useState(null); // Store the selected image
-  const [selectedImageName, setSelectedImageName] = useState(null); // Store the selected pet name for the image modal
-  const navigate = useNavigate(); // Hook for navigation
+  const [showImageModal, setShowImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null); 
+  const [selectedImageName, setSelectedImageName] = useState(null); 
+  const navigate = useNavigate(); 
 
   // Mock pet data
   const pets = [
@@ -34,7 +34,7 @@ const PetNearby = () => {
         gender: 'Male',
         age: 3,
         dateArrived: '2024-06-01',
-        spayedNeutered: false, // Not yet spayed/neutered
+        spayedNeutered: false, 
       },
       {
         id: 2,
@@ -46,7 +46,7 @@ const PetNearby = () => {
         gender: 'Male',
         age: 2,
         dateArrived: '2024-07-15',
-        spayedNeutered: false, // Not yet spayed/neutered
+        spayedNeutered: false, 
       },
       {
         id: 3,
@@ -58,7 +58,7 @@ const PetNearby = () => {
         gender: 'Male',
         age: 4,
         dateArrived: '2024-05-20',
-        spayedNeutered: true, // Already neutered
+        spayedNeutered: true,
       },
       {
         id: 4,
@@ -70,7 +70,7 @@ const PetNearby = () => {
         gender: 'Male',
         age: 4,
         dateArrived: '2024-04-12',
-        spayedNeutered: true, // Already neutered
+        spayedNeutered: true, 
       },
       {
         id: 5,
@@ -82,7 +82,7 @@ const PetNearby = () => {
         gender: 'Male',
         age: 5,
         dateArrived: '2024-03-25',
-        spayedNeutered: true, // Already neutered
+        spayedNeutered: true, 
       },
       {
         id: 6,
@@ -94,7 +94,7 @@ const PetNearby = () => {
         gender: 'Female',
         age: 3,
         dateArrived: '2024-08-10',
-        spayedNeutered: true, // Already spayed
+        spayedNeutered: true, 
       },
       {
         id: 7,
@@ -106,7 +106,7 @@ const PetNearby = () => {
         gender: 'Male',
         age: 2,
         dateArrived: '2024-07-01',
-        spayedNeutered: false, // Not yet spayed/neutered
+        spayedNeutered: false,
       },
       {
         id: 8,
@@ -118,7 +118,7 @@ const PetNearby = () => {
         gender: 'Female',
         age: 4,
         dateArrived: '2024-06-18',
-        spayedNeutered: true, // Already spayed
+        spayedNeutered: true, 
       },
       {
         id: 9,
@@ -130,39 +130,39 @@ const PetNearby = () => {
         gender: 'Male',
         age: 5,
         dateArrived: '2024-02-10',
-        spayedNeutered: true, // Already neutered
+        spayedNeutered: true, 
       }
   ];
 
-  // Handle opening the modal with selected pet
+
   const handleShowDetails = (pet) => {
     setSelectedPet(pet);
     setShowModal(true);
   };
 
-  // Handle closing the modal
+
   const handleCloseModal = () => {
     setShowModal(false);
     setSelectedPet(null);
   };
 
-  // Handle image click and show the full image modal
+
   const handleImageClick = (image, name) => {
     setSelectedImage(image);
-    setSelectedImageName(name); // Set the pet name for the full-size image modal
+    setSelectedImageName(name); 
     setShowImageModal(true);
   };
 
-  // Handle closing the image modal
+
   const handleCloseImageModal = () => {
     setShowImageModal(false);
     setSelectedImage(null);
     setSelectedImageName(null);
   };
 
-  // Handle adopt now action
+
   const handleAdoptNow = (pet) => {
-    navigate('/adoption-form', { state: { pet } }); // Navigate to AdoptionForm with selected pet data
+    navigate('/adoption-form', { state: { pet } }); 
   };
 
   return (
@@ -183,7 +183,7 @@ const PetNearby = () => {
                     src={pet.image}
                     alt="Pet Image"
                     className="card-img-top"
-                    onClick={() => handleImageClick(pet.image, pet.name)} // Pass pet name to the image modal
+                    onClick={() => handleImageClick(pet.image, pet.name)}
                   />
                   <Card.Body className="d-flex flex-column">
                     <Card.Title>{pet.name}</Card.Title>
@@ -203,7 +203,7 @@ const PetNearby = () => {
                     {pet.status !== 'Adopted' && (
                       <Button
                         variant="success"
-                        onClick={() => handleAdoptNow(pet)} // Trigger navigation
+                        onClick={() => handleAdoptNow(pet)} 
                         className="mt-2"
                       >
                         Adopt Now
@@ -218,7 +218,7 @@ const PetNearby = () => {
           )}
         </Row>
 
-        {/* Modal for displaying pet details */}
+        {/* display pet details*/}
         {selectedPet && (
           <Modal show={showModal} onHide={handleCloseModal}>
             <Modal.Header closeButton>
@@ -242,7 +242,7 @@ const PetNearby = () => {
           </Modal>
         )}
 
-       {/* Full Image Modal */}
+       {/*Image Modal */}
 {selectedImage && (
   <Modal className="ImgModal" show={showImageModal} onHide={handleCloseImageModal} size="lg">
     <Modal.Header closeButton>

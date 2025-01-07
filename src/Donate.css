@@ -1,4 +1,4 @@
-/* Horizontal Line Styling */
+
 .hr-style {
     border: 1;
     border-top: 2px solid #000000;
@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-/* Section Titles Styling */
+
 .newHead {
     font-size: 1.5rem;
     margin-top: 20px;
@@ -30,21 +30,21 @@ p1 {
 
 .donation-section img {
     max-width: 300px;
-    height: auto; /* Ensure images scale properly */
+    height: auto; 
     margin-right: 30px;
-    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+    border-radius: 8px; 
 }
 
 .donation-section .content {
     max-width: 700px;
     text-align: left;
 }
-/* Align the section header to the left */
+
 .section-header {
 display: flex;
-justify-content: flex-start; /* Align the content to the left */
+justify-content: flex-start; 
 width: 100%;
-margin-left: 300px; /* Optional: Add some space from the left */
+margin-left: 300px;
 }
 
 .section-header h1 {
@@ -59,11 +59,11 @@ color: #093813;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: black; /* Set text color to black for better contrast */
+    color: black; 
     padding: 50px 15px;
-    background-color: white; /* Set the background color to white */
-    border-radius: 8px; /* Optional: Rounded corners for the main content box */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Light shadow for better separation */
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 .header-text {
     font-size: 2rem;

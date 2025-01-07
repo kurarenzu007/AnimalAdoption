@@ -15,7 +15,7 @@ const AdoptionForm = ({ petId }) => {
   const [adoptionStatus, setAdoptionStatus] = useState('Pending');
   const [message, setMessage] = useState('');
 
-  const navigate = useNavigate(); // Initialize the navigate hook
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,7 +43,7 @@ const AdoptionForm = ({ petId }) => {
     setMessage('Adoption form submitted successfully!');
 
     // Redirect to homepage after form submission
-    navigate('/'); // Navigate to homepage (adjust the path if needed)
+    navigate('/'); 
   };
 
   return (

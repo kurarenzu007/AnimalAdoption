@@ -1,8 +1,8 @@
 import React from 'react'
 import './aboutUs.css'
 
-import Header from './header';  // Import Header
-import Footer from './footer';  // Import Footer
+import Header from './header';  
+import Footer from './footer';  
 import happyPet from './assets/dog-happy.jfif';
 import ourMission from './assets/our_mission.jpg';
 import ourVision from './assets/our_vision.jpg';
