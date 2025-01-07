@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} /> {/* Link to AboutUs */}
         <Route path="/contact-page" element={<Contacts />} /> {/* Link to Contacts */}
         <Route path="/adoption-form" element={<AdoptionForm />} />{/* Link to Adoption Form */}
-        <Route path="/donate" element={<DonationForm />} />{/* Link to Donation Form */}
+        <Route path="/donate-form" element={<DonationForm />} />{/* Link to Donation Form */}
       </Routes>
     </Router>
   );

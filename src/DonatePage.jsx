@@ -12,7 +12,7 @@ const DonatePage = () => {
 
   
   const handleDonateClick = () => {
-    navigate('/donate'); 
+    navigate('/donate-form'); 
   };
   return (
     <div>
