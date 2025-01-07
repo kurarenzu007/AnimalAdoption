@@ -118,7 +118,7 @@ const DonationForm = () => {
           </select>
         </div>
 
-        {/* If Gcash is selected, show Gcash number field */}
+       
         {paymentMethod === 'gcash' && (
           <div className="form-group">
             <label htmlFor="gcashNumber">Enter Gcash Number</label>
@@ -133,7 +133,7 @@ const DonationForm = () => {
           </div>
         )}
 
-        {/* If Credit Card is selected, show card number input */}
+       
         {paymentMethod === 'card' && (
           <div className="form-group">
             <label htmlFor="cardNumber">Credit Card Number</label>
