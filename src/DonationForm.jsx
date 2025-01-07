@@ -50,7 +50,7 @@ const DonationForm = () => {
 
   return (
     <div className="donation-form">
-      <h2>Donate to Our Animal Shelter</h2>
+      <h2>Every Donation Matters.</h2>
 
       {/* Back Button */}
       <button className="back-button" onClick={handleBack}>Back</button>
