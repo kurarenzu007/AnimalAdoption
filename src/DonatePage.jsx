@@ -18,7 +18,7 @@ const DonatePage = () => {
       <Header /> {/* Include Header */}
 
       <div className="container-main">
-        <h1 className="header-text">gago ka</h1>
+        <h1 className="header-text">Support pets in need</h1>
         <p className="donation-description">
           Your generous contribution can help us provide shelter, food, medical care, and a loving home for pets in need. Every donation, no matter how small, makes a significant difference in the lives of these animals. Together, we can give them a better future.
         </p>
