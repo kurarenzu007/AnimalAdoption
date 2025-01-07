@@ -50,7 +50,7 @@ const AdoptionForm = ({ petId }) => {
     <div className="container mt-5 adoption-form-container">
       {/* Back Button */}
       <Button 
-  variant="light"  // Use light background color
+  variant="light" 
   className="back-button" 
   onClick={() => navigate(-1)} 
 >

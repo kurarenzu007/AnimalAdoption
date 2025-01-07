@@ -6,7 +6,14 @@ import './Donate.css';
 import petNeeds from './assets/dog_cat_needs.jpg'
 import spayNeuter from './assets/spay_neuter.jpg'
 import medicalNeeds from './assets/medical_needs.jpg'
+
 const DonatePage = () => {
+  const navigate = useNavigate();
+
+  
+  const handleDonateClick = () => {
+    navigate('/donate'); 
+  };
   return (
     <div>
       <Header /> {/* Include Header */}
@@ -17,9 +24,9 @@ const DonatePage = () => {
           Your generous contribution can help us provide shelter, food, medical care, and a loving home for pets in need. Every donation, no matter how small, makes a significant difference in the lives of these animals. Together, we can give them a better future.
         </p>
         <br />
-        <Link to="/donate">
+        
         <button className="btn-donate" >Donate Now</button>
-        </Link>
+      
         <br /><br />
         <hr className="hr-style" />
         <br /><br />
