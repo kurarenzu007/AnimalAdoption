@@ -18,11 +18,11 @@ const Header = () => {
           <Navbar.Toggle aria-controls="navbar-nav" /> 
           <Navbar.Collapse id="navbar-nav" className="justify-content-end">
             <Nav>
-              <Nav.Link as={Link} to="/" className="text-white">Home</Nav.Link>
-              <Nav.Link as={Link} to="/pet-nearby" className="text-white">Pet Nearby</Nav.Link>
-              <Nav.Link as={Link} to="/about-us" className="text-white">About Us</Nav.Link>
-              <Nav.Link as={Link} to="/contact-page" className="text-white">Contacts</Nav.Link>
-              <Nav.Link as={Link} to="/donate" className="text-white">Donate</Nav.Link>
+              <Nav.Link as={Link} to="/" className="text-dark">Home</Nav.Link>
+              <Nav.Link as={Link} to="/pet-nearby" className="text-dark">Pet Nearby</Nav.Link>
+              <Nav.Link as={Link} to="/about-us" className="text-dark">About Us</Nav.Link>
+              <Nav.Link as={Link} to="/contact-page" className="text-dark">Contacts</Nav.Link>
+              <Nav.Link as={Link} to="/donate" className="text-dark">Donate</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
